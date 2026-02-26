@@ -1,0 +1,9 @@
+[book]
+title = "Test Book"
+authors = ["James Hodgkinson"]
+language = "en"
+
+[preprocessor.build-annotations]
+command = "cargo run --bin mdbook-build-annotations"
+renderer = ["html"]
+string_length = 10
