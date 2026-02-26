@@ -3,6 +3,11 @@ name = "mdbook-buildtime-annotations"
 version = "0.0.1"
 edition = "2024"
 authors = ["James Hodgkinson <james@terminaloutcomes.com>"]
+description = "A preprocessor for mdbook that adds build time annotations to the generated documentation."
+readme = "README.md"
+license = "MIT"
+repository = "https://github.com/yaleman/mdbook-buildtime-annotations"
+documentation = "https://docs.rs/mdbook-buildtime-annotations"
 
 [dependencies]
 anyhow = "1.0.102"
