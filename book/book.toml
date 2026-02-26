@@ -3,6 +3,10 @@ title = "Test Book"
 authors = ["James Hodgkinson"]
 language = "en"
 
+[output.html]
+additional-css = ["footer.css"]
+
+
 [preprocessor.build-annotations]
 command = "cargo run --bin mdbook-buildtime-annotations"
 # the first n characters of the git commit hash to include in the annotation

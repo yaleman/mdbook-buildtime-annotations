@@ -21,6 +21,26 @@ commit_characters = 10
 # git_commit = true
 ```
 
+It's well worth customising the footer tag by adding your own CSS, you can inject it by adding this to your config file:
+
+```toml
+[output.html]
+additional-css = ["footer.css"]
+```
+
+And creating a CSS file targeting the specific tag we inject:
+
+```css
+footer#buildtime-annotations {
+ color: #333;
+ font-size: 0.8rem;
+ display: flex;
+ flex-direction: column;
+ align-items: flex-end;
+ margin-top: 1rem;
+}
+```
+
 ## Installation
 
 ```shell

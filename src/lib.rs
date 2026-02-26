@@ -143,7 +143,7 @@ impl Preprocessor for Processor {
             error!("No annotation data found, not adding footer");
             return Ok(book);
         }
-        footer = format!("<footer>{footer}</footer>");
+        footer = format!("<footer id=\"buildtime-annotations\">{footer}</footer>");
 
         book.for_each_mut(|item| self.handle_bookitem(item, &footer));
 
