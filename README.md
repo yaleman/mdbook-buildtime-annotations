@@ -1,8 +1,10 @@
-[book]
-title = "Test Book"
-authors = ["James Hodgkinson"]
-language = "en"
+# mdbook-buildtime-annotations
 
+## Configuring mdbook
+
+Add the following to your `book.toml` and  season to taste.
+
+```toml
 [preprocessor.build-annotations]
 command = "cargo run --bin mdbook-buildtime-annotations"
 # the first n characters of the git commit hash to include in the annotation
@@ -17,3 +19,10 @@ commit_characters = 10
 # package_version = true
 # Defaults to true if unset, and determines whether to include the git commit in the annotation
 # git_commit = true
+```
+
+## Installation
+
+```shell
+cargo install mdbook-repo-annotations
+```

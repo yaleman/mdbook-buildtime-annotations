@@ -1,0 +1,17 @@
+[package]
+name = "mdbook-buildtime-annotations"
+version = "0.0.1"
+edition = "2024"
+authors = ["James Hodgkinson <james@terminaloutcomes.com>"]
+
+[dependencies]
+anyhow = "1.0.102"
+clap = { version = "4.5.60", features = ["derive"] }
+gix = { version = "0.80.0", default-features = false }
+mdbook-preprocessor = "0.5.2"
+pulldown-cmark = "0.13.1"
+serde = { version = "1.0.228", features = ["derive"] }
+serde_json = "1.0.149"
+toml = "1.0.3"
+tracing = "0.1.44"
+tracing-subscriber = { version = "0.3.22", features = ["env-filter"] }
